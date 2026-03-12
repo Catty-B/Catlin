@@ -1,0 +1,127 @@
+/*===========================
+  Breadcrumbs css 
+===========================*/
+
+
+.breadcrumbs_section{
+
+background:url("../images/normal/breadcrumbs-bg.jpg");
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position:relative;padding: 150px 0px;
+
+        @media #{$md}{
+            padding:100px 0px;
+        }
+        @media #{$md}{
+            padding:80px 0px;
+        }
+        @media #{$xs}{
+            padding: 60px 0px;
+        }
+
+        &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: none;
+          /* IE 8 */
+          -ms-filter:none;
+
+          /* IE 5-7 */
+          filter: none;
+
+          /* Netscape */
+          -moz-opacity: 0.7;
+
+          /* Safari 1.x */
+          -khtml-opacity: 0.7;
+
+          /* Good browsers */
+          opacity: 0.7;
+
+                    
+
+
+        }
+
+
+        .breadcrumbs{
+        	position:relative;
+        	z-index: 12;
+
+        	.breadcrumbs-content{
+        		h1.page-title{
+        			color: $white;padding-bottom:20px;font-size: 65px;
+			        @media #{$lg}{
+			            font-size: 50px;    padding-bottom: 20px;
+			        }
+                    @media #{$md}{
+                        font-size: 45px;    padding-bottom: 20px;
+                    }
+			        @media #{$xs}{
+			            font-size: 35px;    padding-bottom: 20px;
+			        }
+        		}
+        		p{
+        			color: $white;
+        		}
+
+        			color: $white;
+			        @media #{$md}{
+			              padding-bottom: 20px;
+			        }
+			        @media #{$xs}{
+			              padding-bottom: 20px;
+			        }
+
+        	}
+
+
+        	nav{
+
+        		ol.breadcrumb{
+        			color: $white;
+        			li.breadcrumb-item{
+        				color: $white;
+        				a{
+        					color: $white;
+        				}
+        			}
+        			li.active{
+        				color: #0c0707;
+        			}
+        		}
+
+				.breadcrumb-item+.breadcrumb-item::before {
+				    float: left;
+				    padding-right: .5rem;
+				    color: #130d0d;
+				    content: var(--bs-breadcrumb-divider, "/");
+				}
+
+
+
+        	}
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+}
